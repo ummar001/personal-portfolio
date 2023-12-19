@@ -2,12 +2,13 @@
 
 /* Existing styles for full-screen sections */
 .full-screen-section {
-  height: 100vh;
+  min-height: 100vh; /* Adjust as needed */
   width: 100vw;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: #121212; /* Optional: Replace with your background color */
+  padding: 20px; /* Add padding to prevent overlap */
 }
 
 /* Additional styles for mobile devices */

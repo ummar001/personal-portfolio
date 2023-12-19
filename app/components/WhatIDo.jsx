@@ -13,7 +13,7 @@ const WhatIDo = () => {
           </h2>
         
 
-        <div className="flex justify-around max-w-3xl mx-auto">
+        <div className="flex flex-col md:flex-row items-center justify-around max-w-3xl mx-auto">
           <div className="flex flex-col items-center mx-3">
             {/* Your existing content */}
           </div>
@@ -22,19 +22,19 @@ const WhatIDo = () => {
             {/* Your existing content */}
           </div>
 
-          <div className="flex flex-col items-center mx-3">
+          <div className="flex flex-col items-left mx-3 md:order-1">
             {/* SpinnerBlocks component */}
             <SpinnerBlocks />
             <p className="text-white text-center">Software Development</p>
           </div>
 
-          <div className="flex flex-col items-center mx-3">
+          <div className="flex flex-col items-center mx-3 md:order-2">
             {/* SpinnerDualBall component */}
             <SpinnerDualBall />
             <p className="text-white text-center">Web Design</p>
           </div>
 
-          <div className="flex flex-col items-center mx-3">
+          <div className="flex flex-col items-center mx-3 md:order-3">
             {/* CubeBlock component */}
             <CubeBlock />
             <p className="text-white text-center ">Web Development</p>

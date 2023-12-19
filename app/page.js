@@ -5,22 +5,22 @@ import AboutSection from "./components/AboutSection";
 import LeftSide from "./components/LeftSide";
 import WhatIDo from "./components/WhatIDo";
 import SkillsComponent from "./components/SkillsSection.";
+import ProjectsSection from "./components/ProjectSection";
 
 import "./page.css"; // Import your CSS file
-import ProjectsSection from "./components/ProjectSection";
 
 export default function Home() {
   return (
     <main className="flex flex-col min-h-screen overflow-hidden">
       <Navbar />
-      <br></br>
+      <br />
       <section className="full-screen-section">
         <HeroSection />
       </section>
       <section className="full-screen-section">
         <AboutSection />
       </section>
-      <section className="full-screen-section">
+      <section className="#">
         <LeftSide />
       </section>
       <section className="full-screen-section">
@@ -30,16 +30,8 @@ export default function Home() {
         <SkillsComponent />
       </section>
 
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
+      <br />
+      {/* Additional sections */}
       <section className="full-screen-section">
         <ProjectsSection />
       </section>
