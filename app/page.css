@@ -1,0 +1,31 @@
+/* page.css */
+
+/* Existing styles for full-screen sections */
+.full-screen-section {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #121212; /* Optional: Replace with your background color */
+}
+
+/* Additional styles for mobile devices */
+@media (max-width: 768px) {
+  .full-screen-section {
+    margin-top: 20px; /* Adjust the spacing between sections */
+    margin-bottom: 20px; /* Adjust the spacing between sections */
+  }
+}
+
+/* Other existing styles... */
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Optional: Hide horizontal scrollbar if not needed */
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+}

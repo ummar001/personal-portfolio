@@ -4,6 +4,8 @@ import Link from "next/link";
 import NavLink from "./NavLink";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
 import MenuOverlay from "./MenuOverlay";
+import { Link as Scroll } from "react-scroll"
+
 
 const navLinks = [
   {
@@ -12,11 +14,11 @@ const navLinks = [
   },
   {
     title: "About",
-    path: "#about",
+    path: "#AboutSection",
   },
   {
     title: "Projects",
-    path: "#projects",
+    path: "#WhatIDo",
   },
   {
     title: "Contact",

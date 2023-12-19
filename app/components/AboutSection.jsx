@@ -5,9 +5,9 @@ const AboutSection = () => {
   return (
     <section className="text-white">
       <div className="md:grid md:grid-cols-2 gap-8 items-center py-8 px4 xl:gap-16 sm:py-16 xl:px-16 ">
-        <Image src="/images/aboutme.png" width={500} height={500} alt="about me" />
-        <div>
-          <h2 className="text-3xl font-bold text-[#00FFFF]" > About me</h2>
+        {/* <Image src="/images/aboutme.png" width={500} height={500} alt="about me" /> */}
+        <div className="text-center">
+          <h2 className="text-3xl font-bold text-center text-[#00FFFF]" > About me</h2>
           <p>
             My name is Ummar and I'm a Junior full stack web developer with a passion for creating
             interactive and responsive web applications. I have experience
