@@ -32,7 +32,7 @@ export default function Home() {
 
       <br />
       {/* Additional sections */}
-      <section className="full-screen-section">
+      <section className="full-screen-section ">
         <ProjectsSection />
       </section>
     </main>

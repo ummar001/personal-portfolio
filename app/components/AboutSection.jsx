@@ -1,9 +1,11 @@
+// AboutSection.jsx
+
 import React from "react";
 import Image from "next/image";
 
 const AboutSection = () => {
   return (
-    <section className="text-white">
+    <section className="text-white full-screen-section parallax"> {/* Add the 'parallax' class here */}
       <div className="md:grid md:grid-cols-2 gap-8 items-center py-8 px4 xl:gap-16 sm:py-16 xl:px-16 ">
         {/* <Image src="/images/aboutme.png" width={500} height={500} alt="about me" /> */}
         <div className="text-center">
@@ -15,9 +17,8 @@ const AboutSection = () => {
              HTML, CSS, and Git. I am a quick learner and I am always
             looking to expand my knowledge and skill set. I am a team player and
             I am excited to work with others to create amazing applications.
-            </p>
+          </p>
         </div>
-       
       </div>
     </section>
   );
