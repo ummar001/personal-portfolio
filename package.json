@@ -11,11 +11,12 @@
   "dependencies": {
     "@heroicons/react": "^2.0.18",
     "@splinetool/react-spline": "^2.2.6",
-    "@splinetool/runtime": "^0.9.525",
+    "@splinetool/runtime": "^0.9.526",
     "next": "14.0.4",
     "react": "^18",
     "react-dom": "^18",
     "react-icons": "^4.12.0",
+    "react-iframe": "^1.8.5",
     "react-parallax": "^3.5.1",
     "react-scroll": "^1.9.0",
     "react-scroll-parallax": "^3.4.5",

@@ -7,15 +7,27 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #121212; /* Optional: Replace with your background color */
+  background-color: transparent; /* Fix this to a valid color value, e.g., 'transparent' */
+}
+
+/* Adjust the parallax effect to start without initial transformations */
+.parallax {
+  transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+  opacity: 1; /* Initial opacity */
+}
+
+/* Remove the hover effect on parallax */
+.parallax:hover {
+  transform: none;
+  opacity: 1;
 }
 
 /* Additional styles for mobile devices */
 @media (max-width: 768px) {
   .full-screen-section {
-    margin-top: 20px; /* Adjust the spacing between sections */
-    margin-bottom: 20px; /* Adjust the spacing between sections */
-    height: auto; /* Adjust the height for smaller screens */
+    margin-top: 20px;
+    margin-bottom: 20px;
+    height: auto;
   }
 }
 
@@ -23,7 +35,7 @@
 body {
   margin: 0;
   padding: 0;
-  overflow-x: hidden; /* Optional: Hide horizontal scrollbar if not needed */
+  overflow-x: hidden;
 }
 
 main {
@@ -31,12 +43,6 @@ main {
   flex-direction: column;
 }
 
-.parallax {
-  transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
-  opacity: 0; /* Initial opacity */
-}
-
-.parallax:hover {
-  transform: translateY(-50px) translateX(50px);
-  opacity: 1; /* Adjust the opacity value based on your preference */
+html {
+  scroll-behavior: smooth;
 }

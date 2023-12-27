@@ -1,0 +1,39 @@
+/* BlueDot.module.css */
+@keyframes moveRandomly {
+  0% {
+    transform: translate(0, 0);
+  }
+  20% {
+    transform: translate(100px, 100px);
+  }
+  40% {
+    transform: translate(-100px, 50px);
+  }
+  60% {
+    transform: translate(50px, -100px);
+  }
+  80% {
+    transform: translate(0, 0);
+  }
+}
+
+.blueDot {
+  background: radial-gradient(ellipse at center, #00FFFF, transparent);
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  position: absolute;
+  filter: blur(8px);
+  top: 50%;
+  right: 25%;
+  transform: translateY(-50%);
+  animation: moveRandomly 10s infinite; /* Adjust the duration and timing function as needed */
+}
+
+.smaller {
+  width: 60px; /* Adjust the size of the smaller dots */
+  height: 60px;
+  filter: blur(4px); /* Adjust the blur effect for smaller dots */
+}
+
+/* Add more styling or keyframes as needed */

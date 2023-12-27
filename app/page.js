@@ -1,40 +1,86 @@
-// import Image from "next/image";
+"use client";
+
+import React from "react";
+import { ParallaxProvider, Parallax } from "react-scroll-parallax";
+import { Link, Element } from "react-scroll";
 import HeroSection from "./components/HeroSection";
-import Navbar from "./components/NavBar";
+import Navbar from "./components/componets_for_Navbar/NavBar";
 import AboutSection from "./components/AboutSection";
 import LeftSide from "./components/LeftSide";
 import WhatIDo from "./components/WhatIDo";
 import SkillsComponent from "./components/SkillsSection.";
 import ProjectsSection from "./components/ProjectSection";
+import EmailSection from "./components/EmailSection";
+import BlueDot from ".//components/bluedotcomponent/BlueDot";
 
 import "./page.css"; // Import your CSS file
 
 export default function Home() {
   return (
-    <main className="flex flex-col min-h-screen overflow-hidden">
-      <Navbar />
-      <br />
-      <section className="full-screen-section">
-        <HeroSection />
-      </section>
-      <section className="full-screen-section">
-        <AboutSection />
-      </section>
-      <section className="#">
-        <LeftSide />
-      </section>
-      <section className="full-screen-section">
-        <WhatIDo />
-      </section>
-      <section className="full-screen-section">
-        <SkillsComponent />
-      </section>
+    <ParallaxProvider>
+      <main className="flex flex-col min-h-screen overflow-hidden">
+        <Navbar />
+        <br />
+        <div>
+          <Element name="hero">
+            <Parallax y={[-40, 40]} tagOuter="figure">
+              <section className="full-screen-section">
+                <HeroSection />
+              </section>
+            </Parallax>
+          </Element>
 
-      <br />
-      {/* Additional sections */}
-      <section className="full-screen-section ">
-        <ProjectsSection />
-      </section>
-    </main>
+          <Element name="about">
+            <Parallax y={[-60, 40]} tagOuter="figure">
+              <section className="full-screen-section">
+                <AboutSection />
+              </section>
+            </Parallax>
+          </Element>
+
+          <Element name="leftSide">
+            <section>
+              <LeftSide />
+            </section>
+          </Element>
+
+          <Element name="whatIDo">
+            <Parallax y={[-40, 40]} tagOuter="figure">
+              <section className="full-screen-section">
+                <WhatIDo />
+              </section>
+            </Parallax>
+          </Element>
+
+          <Element name="skills">
+            <Parallax y={[-40, 40]} tagOuter="figure">
+              <section className="full-screen-section">
+                {/* <SkillsComponent /> */}
+              </section>
+            </Parallax>
+          </Element>
+        </div>
+
+        <br />
+        {/* Additional sections */}
+        <Element name="projects">
+          <Parallax y={[-40, 40]} tagOuter="figure">
+            <section className="full-screen-section">
+              <ProjectsSection />
+            </section>
+          </Parallax>
+        </Element>
+
+        <Element name="email">
+          <Parallax y={[-40, 40]} tagOuter="figure">
+            <section className="full-screen-section">
+              <EmailSection />
+            </section>
+          </Parallax>
+        </Element>
+
+        
+      </main>
+    </ParallaxProvider>
   );
 }
