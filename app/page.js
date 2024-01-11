@@ -26,13 +26,13 @@ export default function Home() {
 
         
            
-            <MouseTrail/>
+            {/* <MouseTrail/> */}
            
         
 
         <div>
           <Element name="hero">
-            <Parallax y={[-40, 40]} tagOuter="figure">
+            <Parallax y={[-40, 40]} tagouter="figure">
               <section className="full-screen-section">
                 <HeroSection />
               </section>
@@ -50,7 +50,7 @@ export default function Home() {
           </Element> */}
 
           <Element name="about">
-            <Parallax y={[-60, 40]} tagOuter="figure">
+            <Parallax y={[-60, 40]} tagouter="figure">
               <section className="full-screen-section">
                 <AboutSection />
               </section>
@@ -66,7 +66,7 @@ export default function Home() {
           </Element>
 
           <Element name="whatIDo">
-            <Parallax y={[-40, 40]} tagOuter="figure">
+            <Parallax y={[-40, 40]} tagouter="figure">
               <section className="full-screen-section">
                 <WhatIDo />
               </section>
@@ -74,7 +74,7 @@ export default function Home() {
           </Element>
 
           <Element name="skills">
-            <Parallax y={[-40, 40]} tagOuter="figure">
+            <Parallax y={[-40, 40]} tagouter="figure">
               <section className="full-screen-section">
                 {/* <SkillsComponent /> */}
               </section>
@@ -85,7 +85,7 @@ export default function Home() {
         <br />
         {/* Additional sections */}
         <Element name="projects">
-          <Parallax y={[-40, 40]} tagOuter="figure">
+          <Parallax y={[-40, 40]} tagouter="figure">
             <section className="full-screen-section">
               <ProjectsSection />
             </section>
@@ -93,7 +93,7 @@ export default function Home() {
         </Element>
 
         <Element name="email">
-          <Parallax y={[-40, 40]} tagOuter="figure">
+          <Parallax y={[-40, 40]} tagouter="figure">
             <section className="full-screen-section">
               <EmailSection />
             </section>

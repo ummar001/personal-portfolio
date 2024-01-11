@@ -19,52 +19,52 @@ const EmailSection = () => {
       </div>
       <div>
         <form>
-          <div class="mb-6">
+          <div className="mb-6">
             <label
               for="email"
-              class="block mb-2 text-sm font-medium text-white"
+              className="block mb-2 text-sm font-medium text-white"
             >
               Your email
             </label>
             <input
               type="email"
               id="email"
-              class="bg-gray-[#18191E] border border-[#33353F] bg-[#18191E] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg  block w-full p-2.5"
+              className="bg-gray-[#18191E] border border-[#33353F] bg-[#18191E] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg  block w-full p-2.5"
               placeholder="jacob@google.com"
               required
             />
           </div>
-          <div class="mb-6">
+          <div className="mb-6">
             <label
               for="subject"
-              class="block mb-2 text-sm font-medium text-white"
+              className="block mb-2 text-sm font-medium text-white"
             >
               Subject
             </label>
             <input
               type="text"
               id="subject"
-              class="bg-gray-[#18191E] border border-[#33353F] bg-[#18191E] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg  block w-full p-2.5"
+              className="bg-gray-[#18191E] border border-[#33353F] bg-[#18191E] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg  block w-full p-2.5"
               placeholder="Just saying hi"
             />
           </div>
-          <div class="mb-6">
+          <div className="mb-6">
             <label
               for="subject"
-              class="block mb-2 text-sm font-medium text-white"
+              className="block mb-2 text-sm font-medium text-white"
             >
               Message
             </label>
             <textarea
               id="message"
-              class="bg-gray-[#18191E] border border-[#33353F] bg-[#18191E] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg  block w-full p-2.5"
+              className="bg-gray-[#18191E] border border-[#33353F] bg-[#18191E] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg  block w-full p-2.5"
               placeholder="Let's talk about..."
             />
           </div>
-          <div class="mb-6">
+          <div className="mb-6">
             <button
               type="submit"
-              class="bg-[#00FFFF] hover:[#85C1E9]--600 text-white font-medium py-2.5 px-5 rounded-lg w-full"
+              className="bg-[#00FFFF] hover:[#85C1E9]--600 text-black font-medium py-2.5 px-5 rounded-lg w-full"
             >
               {" "}
               Send message{" "}
