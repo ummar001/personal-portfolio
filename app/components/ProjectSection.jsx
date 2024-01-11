@@ -48,7 +48,7 @@ const projectsData = [
     id: 6,
     title: "Pending Project",
     // description: "Project 6 description",
-    image: "/images/projects/6.png",
+    image: "#",
     tag: ["All", "Web"],
     gitUrl: "/",
     previewUrl:"/",

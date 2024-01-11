@@ -14,6 +14,8 @@ function Navbar() {
 
   return (
     <header>
+     <div className="hidden md:block absolute w-80 h-80 z-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-[#00FFFF] to-transparent rounded-full blur-lg top-[-20%] left-[9%] transform -translate-x-1/2 -translate-y-1/2"></div>
+
       <h3>Ummar Mohammed</h3>
       <nav ref={navRef}>
         <Link to="hero" smooth={true} duration={500}>

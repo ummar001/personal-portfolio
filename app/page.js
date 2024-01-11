@@ -15,10 +15,7 @@ import dynamic from 'next/dynamic';
 
 import "./page.css"; // Import your CSS file
 
-const DynamicInteractiveMouseTrail = dynamic(
-  () => import("./components/InteractiveMouseTrail/InteractiveMouseTrail"),
-  { ssr: false }
-);
+
 
 export default function Home() {
   return (
@@ -26,6 +23,13 @@ export default function Home() {
       <main className="flex flex-col min-h-screen overflow-hidden">
         <Navbar />
         <br />
+
+        
+           
+            <MouseTrail/>
+           
+        
+
         <div>
           <Element name="hero">
             <Parallax y={[-40, 40]} tagOuter="figure">
@@ -37,11 +41,7 @@ export default function Home() {
 
           
 
-          <Element name="MouseTrail">
-            <section className="full-screen-section">
-            <MouseTrail/>
-            </section>
-          </Element>
+          
 
           {/* <Element name="interactiveMouseTrail">
             <section className="full-screen-section">
@@ -56,7 +56,9 @@ export default function Home() {
               </section>
             </Parallax>
           </Element>
-
+          
+          
+          
           <Element name="leftSide">
             <section>
               <LeftSide />

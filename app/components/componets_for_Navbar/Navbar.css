@@ -113,9 +113,10 @@ nav {
 
 header h3 {
   font-size: 2rem;
-  font-weight: bold;
+  font-weight: heavilybold;
   margin-right: auto; /* Align the heading to the left */
-  color: var(--textColor);
+  color: black;
+  z-index: 1;
 }
 
 @media only screen and (max-width: 768px) {

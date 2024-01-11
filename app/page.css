@@ -7,7 +7,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: transparent; /* Fix this to a valid color value, e.g., 'transparent' */
+  
 }
 
 /* Adjust the parallax effect to start without initial transformations */

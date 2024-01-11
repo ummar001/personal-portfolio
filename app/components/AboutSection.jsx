@@ -8,7 +8,7 @@ import MouseTrail from "./InteractiveMouseTrail/MouseTrail";
 const AboutSection = () => {
   return (
     <section className="text-white full-screen-section parallax pb-50">
-       <MouseTrail />
+       
       <div className="absolute w-80 h-80 z-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-[#00FFFF] to-transparent rounded-full blur-lg top-full -right-4 transform -translate-x-1/2 -translate-y-1/2"></div>
       <div className="md:grid md:grid-cols-2 gap-8 items-center  px4 xl:gap-16 sm:py-16 xl:px-16 sm:grid sm:grid-cols-1">
         <div className="text-center pl-10 pr-10 md:pr-20">
