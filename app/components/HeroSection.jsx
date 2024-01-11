@@ -12,7 +12,7 @@ const HeroSection = () => {
       <div className="absolute w-80 h-80 z-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-[#00FFFF] to-transparent rounded-full blur-lg top-full -left-4 transform -translate-x-1/2 -translate-y-1/2"></div>
         <div className="col-span-7 place-self-center text-center sm:text-left">
           <h1 className="text-white mb-4 text-4xl sm:text-5xl lg:text-5xl font-extrabold">
-            Hello there, I'm{" "}
+            Hello there, I&apos;m{" "}
           </h1>
           <TypeAnimation
             sequence={[
@@ -22,11 +22,11 @@ const HeroSection = () => {
               1000,
               "A Junior Web Developer",
               1000,
-              "Frontend Enthusiast",
+              "A Frontend Enthusiast",
               1000,
-              "Backend Explorer",
+              "A Backend Explorer",
               1000,
-              "Passionate Learner",
+              " A Passionate Learner",
               1000,
             ]}
             wrapper="span"

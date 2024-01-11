@@ -1,0 +1,12 @@
+/* MouseDot.css */
+
+.mouse-dot {
+    background: radial-gradient(ellipse at center, #00FFFF, transparent);
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    position: absolute;
+    filter: blur(8px);
+    /* Adjust positioning as needed */
+  }
+  

@@ -1,5 +1,4 @@
 "use client";
-
 import React from "react";
 import { ParallaxProvider, Parallax } from "react-scroll-parallax";
 import { Link, Element } from "react-scroll";
@@ -11,9 +10,15 @@ import WhatIDo from "./components/WhatIDo";
 import SkillsComponent from "./components/SkillsSection.";
 import ProjectsSection from "./components/ProjectSection";
 import EmailSection from "./components/EmailSection";
-import BlueDot from ".//components/bluedotcomponent/BlueDot";
+import MouseTrail from "./components/InteractiveMouseTrail/MouseTrail";
+import dynamic from 'next/dynamic';
 
 import "./page.css"; // Import your CSS file
+
+const DynamicInteractiveMouseTrail = dynamic(
+  () => import("./components/InteractiveMouseTrail/InteractiveMouseTrail"),
+  { ssr: false }
+);
 
 export default function Home() {
   return (
@@ -29,6 +34,20 @@ export default function Home() {
               </section>
             </Parallax>
           </Element>
+
+          
+
+          <Element name="MouseTrail">
+            <section className="full-screen-section">
+            <MouseTrail/>
+            </section>
+          </Element>
+
+          {/* <Element name="interactiveMouseTrail">
+            <section className="full-screen-section">
+              <DynamicInteractiveMouseTrail />
+            </section>
+          </Element> */}
 
           <Element name="about">
             <Parallax y={[-60, 40]} tagOuter="figure">
