@@ -21,7 +21,7 @@ const EmailSection = () => {
         <form>
           <div className="mb-6">
             <label
-              for="email"
+              htmlFor="email"
               className="block mb-2 text-sm font-medium text-white"
             >
               Your email
@@ -36,7 +36,7 @@ const EmailSection = () => {
           </div>
           <div className="mb-6">
             <label
-              for="subject"
+              htmlFor="subject"
               className="block mb-2 text-sm font-medium text-white"
             >
               Subject
@@ -50,7 +50,7 @@ const EmailSection = () => {
           </div>
           <div className="mb-6">
             <label
-              for="subject"
+              htmlFor="subject"
               className="block mb-2 text-sm font-medium text-white"
             >
               Message

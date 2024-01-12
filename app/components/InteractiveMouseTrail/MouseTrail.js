@@ -1,8 +1,10 @@
 // MouseTrail.js
-import React, { useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import "./MouseTrail.css"; // Import the CSS for styling
 
 const MouseTrail = () => {
+  const [dots, setDots] = useState([]);
+
   useEffect(() => {
     const createDot = (x, y) => {
       const dot = document.createElement("div");
@@ -14,6 +16,8 @@ const MouseTrail = () => {
       setTimeout(() => {
         dot.remove();
       }, 800); // Remove dot after 800ms
+
+      setDots((prevDots) => [...prevDots, dot]);
     };
 
     const onMouseMove = (event) => {
@@ -24,8 +28,11 @@ const MouseTrail = () => {
 
     return () => {
       document.removeEventListener("mousemove", onMouseMove);
+
+      // Remove all dots from the DOM when the component unmounts
+      dots.forEach((dot) => dot.remove());
     };
-  }, []);
+  }, [dots]);
 
   return null;
 };

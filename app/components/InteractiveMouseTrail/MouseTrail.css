@@ -1,3 +1,4 @@
+/* Add this to your CSS file (MouseTrail.css or page.css) */
 .mouse-dot {
   background: radial-gradient(ellipse at center, #00FFFF, transparent);
   width: 8px;
@@ -5,6 +6,6 @@
   border-radius: 50%;
   position: absolute;
   filter: blur(8px);
-  z-index: 100; /* Set a specific z-index value */
+  z-index: 1; /* Set a specific z-index value */
   /* Adjust positioning as needed */
 }

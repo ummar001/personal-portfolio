@@ -12,6 +12,7 @@ import ProjectsSection from "./components/ProjectSection";
 import EmailSection from "./components/EmailSection";
 import MouseTrail from "./components/InteractiveMouseTrail/MouseTrail";
 import dynamic from 'next/dynamic';
+import MouseParticles from "./components/InteractiveMouseTrail/MouseParticles";
 
 import "./page.css"; // Import your CSS file
 
@@ -19,14 +20,17 @@ import "./page.css"; // Import your CSS file
 
 export default function Home() {
   return (
+
+   <div>
+    
     <ParallaxProvider>
       <main className="flex flex-col min-h-screen overflow-hidden">
         <Navbar />
         <br />
 
         
+        <MouseParticles />
            
-            {/* <MouseTrail/> */}
            
         
 
@@ -103,5 +107,6 @@ export default function Home() {
         
       </main>
     </ParallaxProvider>
+    </div>
   );
 }
