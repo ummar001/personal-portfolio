@@ -1,21 +1,36 @@
-import React from "react";
-
-import ShakingComponent from "./shakingComponent/ShakingComponent"; 
-
-import './shakingComponent/shakingcomponent.css';
+import React, { useEffect, useRef } from "react";
 
 const EmailSection = () => {
+  const splineViewerRef = useRef();
+
+  useEffect(() => {
+    const script = document.createElement("script");
+    script.type = "module";
+    script.src =
+      "https://unpkg.com/@splinetool/viewer@1.0.28/build/spline-viewer.js";
+    document.head.appendChild(script);
+
+    script.onload = () => {
+      if (splineViewerRef.current) {
+        const splineViewer = splineViewerRef.current;
+        splineViewer.url =
+          "https://prod.spline.design/ShhuLGt9LDqyRPgT/scene.splinecode";
+      }
+    };
+
+    return () => {
+      document.head.removeChild(script);
+    };
+  }, []);
+
   return (
     <section className="grid md:grid-cols-2 my-12 md:my-16 py-24 gap-4 relative">
-      <div className="absolute w-80 h-80 z-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-[#00FFFF] to-transparent rounded-full blur-lg top-full -left-4 transform -translate-x-1/2 -translate-y-1/2"></div>
       <div className="z-10">
-        <ShakingComponent />
         <p className="text-[#ADB7BE] mb-4 max-w-md">
           I&apos;m currently looking for new opportunities, my inbox is always open.
           Whether you have a question or just want to say hi, I&apos;ll try my best
           to get back to you!
         </p>
-        
       </div>
       <div>
         <form>
@@ -50,7 +65,7 @@ const EmailSection = () => {
           </div>
           <div className="mb-6">
             <label
-              htmlFor="subject"
+              htmlFor="message"
               className="block mb-2 text-sm font-medium text-white"
             >
               Message
@@ -71,6 +86,17 @@ const EmailSection = () => {
             </button>
           </div>
         </form>
+      </div>
+      <div className="absolute bottom-20 right-0 z-9999 spline-container">
+        <spline-viewer
+          ref={splineViewerRef}
+          style={{
+            width: "100vw",
+            height: "100vh", // Adjust the height as needed
+            left: "75%",
+            transform: "translateY(60%)",
+          }}
+        ></spline-viewer>
       </div>
     </section>
   );

@@ -1,25 +1,32 @@
-// MouseParticles.js
 import React from "react";
-import Particles from "react-mouse-particles";
+import dynamic from 'next/dynamic';
+
+// Import Particles using dynamic import to ensure it's only loaded on the client side
+const Particles = dynamic(() => import("react-mouse-particles"), {
+  ssr: false, // Disable server-side rendering
+});
 
 const MouseParticles = () => {
-  return (
-    <Particles
-      // You can customize the options as per your preference
-      options={{
-        color: "white",
-        lines: {
+  if (typeof window !== 'undefined') {
+    return (
+      <Particles
+        options={{
           color: "white",
-        },
-        particles: {
-          color: "white",
-          links: {
+          lines: {
             color: "white",
           },
-        },
-      }}
-    />
-  );
+          particles: {
+            color: "white",
+            links: {
+              color: "white",
+            },
+          },
+        }}
+      />
+    );
+  }
+
+  return null; // Return null if running on the server
 };
 
 export default MouseParticles;

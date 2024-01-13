@@ -10,7 +10,6 @@ import WhatIDo from "./components/WhatIDo";
 import SkillsComponent from "./components/SkillsSection.";
 import ProjectsSection from "./components/ProjectSection";
 import EmailSection from "./components/EmailSection";
-import MouseTrail from "./components/InteractiveMouseTrail/MouseTrail";
 import dynamic from 'next/dynamic';
 import MouseParticles from "./components/InteractiveMouseTrail/MouseParticles";
 
@@ -29,7 +28,7 @@ export default function Home() {
         <br />
 
         
-        <MouseParticles />
+        {/* <MouseParticles /> */}
            
            
         

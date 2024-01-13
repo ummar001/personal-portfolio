@@ -3,7 +3,7 @@ import { Parallax } from "react-scroll-parallax";
 import Image from "next/image";
 import Spline from "@splinetool/react-spline";
 import BlueDot from './bluedotcomponent/BlueDot';
-import MouseTrail from "./InteractiveMouseTrail/MouseTrail";
+
 
 const AboutSection = () => {
   return (
