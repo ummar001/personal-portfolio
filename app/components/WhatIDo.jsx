@@ -83,7 +83,7 @@ const WhatIDo = () => {
       
       </h2>
       <h1></h1>
-        <BlueDot size="50px" />
+       
         <BlueDot size="30px" />
 
       

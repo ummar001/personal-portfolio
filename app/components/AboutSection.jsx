@@ -1,10 +1,12 @@
 import React from "react";
 import Spline from "@splinetool/react-spline";
+import BlueDot from './bluedotcomponent/BlueDot'
 
 const AboutSection = () => {
   return (
     <section className="text-white full-screen-section parallax pb-50">
-      <div className="absolute w-80 h-80 z-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-[#00FFFF] to-transparent rounded-full blur-lg top-full -right-4 transform -translate-x-1/2 -translate-y-1/2"></div>
+      
+      <div className="absolute w-80 h-80 z-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-[#00FFFF] to-transparent rounded-full blur-lg top-full right-0 -translate-y-1/3"></div>
       <div className="md:grid md:grid-cols-2 gap-8 items-center px-4 xl:gap-16 sm:py-16 xl:px-16 sm:grid sm:grid-cols-1">
         <div className="text-center pl-10 pr-10 md:pr-20">
           <h2 className="text-3xl font-bold text-center md:pl-8 md:pr-20 text-[#00FFFF]">
@@ -31,6 +33,10 @@ const AboutSection = () => {
             journey together!
           </p>
         </div>
+
+        
+
+
 
         {/* Container for the Spline component without parallax effect */}
         <div className="spline-container pl-10  md:mt-0 mt-8 pb-6"  >

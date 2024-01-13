@@ -23,14 +23,30 @@ const EmailSection = () => {
     };
   }, []);
 
+  // Check if the window width is greater than or equal to 640 (sm breakpoint)
+  const isLargeScreen = window.innerWidth >= 640;
+
   return (
     <section className="grid md:grid-cols-2 my-12 md:my-16 py-24 gap-4 relative">
-      <div className="z-10">
+      <div className="z-10 relative">
         <p className="text-[#ADB7BE] mb-4 max-w-md">
-          I&apos;m currently looking for new opportunities, my inbox is always open.
+          I&apos;m currently looking for new opportunities; my inbox is always open.
           Whether you have a question or just want to say hi, I&apos;ll try my best
           to get back to you!
         </p>
+        {isLargeScreen && (
+          <div className="absolute bottom-20 right-0 z-9999 spline-container">
+            <spline-viewer
+              ref={splineViewerRef}
+              style={{
+                width: "80vw",
+                height: "100vh",
+                transform: "translateY(60%)",
+              }}
+            ></spline-viewer>
+          </div>
+        )}
+      
       </div>
       <div>
         <form>
@@ -44,7 +60,7 @@ const EmailSection = () => {
             <input
               type="email"
               id="email"
-              className="bg-gray-[#18191E] border border-[#33353F] bg-[#18191E] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg  block w-full p-2.5"
+              className="bg-gray-[#18191E] border border-[#33353F] bg-[#18191E] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
               placeholder="emailme@google.com"
               required
             />
@@ -59,7 +75,7 @@ const EmailSection = () => {
             <input
               type="text"
               id="subject"
-              className="bg-gray-[#18191E] border border-[#33353F] bg-[#18191E] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg  block w-full p-2.5"
+              className="bg-gray-[#18191E] border border-[#33353F] bg-[#18191E] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
               placeholder="Just saying hi"
             />
           </div>
@@ -72,7 +88,7 @@ const EmailSection = () => {
             </label>
             <textarea
               id="message"
-              className="bg-gray-[#18191E] border border-[#33353F] bg-[#18191E] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg  block w-full p-2.5"
+              className="bg-gray-[#18191E] border border-[#33353F] bg-[#18191E] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
               placeholder="Let's talk about..."
             />
           </div>
@@ -86,17 +102,6 @@ const EmailSection = () => {
             </button>
           </div>
         </form>
-      </div>
-      <div className="absolute bottom-20 right-0 z-9999 spline-container">
-        <spline-viewer
-          ref={splineViewerRef}
-          style={{
-            width: "100vw",
-            height: "100vh", // Adjust the height as needed
-            left: "75%",
-            transform: "translateY(60%)",
-          }}
-        ></spline-viewer>
       </div>
     </section>
   );

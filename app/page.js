@@ -12,6 +12,7 @@ import ProjectsSection from "./components/ProjectSection";
 import EmailSection from "./components/EmailSection";
 import dynamic from 'next/dynamic';
 import MouseParticles from "./components/InteractiveMouseTrail/MouseParticles";
+import BlueDot from "./components/bluedotcomponent/BlueDot";
 
 import "./page.css"; // Import your CSS file
 
@@ -21,7 +22,8 @@ export default function Home() {
   return (
 
    <div>
-    
+
+     <BlueDot size="30px" />
     <ParallaxProvider>
       <main className="flex flex-col min-h-screen overflow-hidden">
         <Navbar />
@@ -46,11 +48,7 @@ export default function Home() {
 
           
 
-          {/* <Element name="interactiveMouseTrail">
-            <section className="full-screen-section">
-              <DynamicInteractiveMouseTrail />
-            </section>
-          </Element> */}
+       
 
           <Element name="about">
             <Parallax y={[-60, 40]} tagouter="figure">
