@@ -11,7 +11,7 @@ const projectsData = [
     image: "/images/projects/portfolio.png",
     tag: ["All", "Web"],
     gitUrl: "https://github.com/ummar001/portfolio-website",
-    previewUrl: "https://github.com/ummar001/personal-portfolio",
+    previewUrl: "https://ummar.co.uk/",
 
   },
  
