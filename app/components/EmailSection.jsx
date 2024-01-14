@@ -24,7 +24,12 @@ const EmailSection = () => {
   }, []);
 
   // Check if the window width is greater than or equal to 640 (sm breakpoint)
-  const isLargeScreen = window.innerWidth >= 640;
+  let isLargeScreen;
+
+if (typeof window !== 'undefined') {
+  // Check if the window width is greater than or equal to 640 (sm breakpoint)
+  isLargeScreen = window.innerWidth >= 640;
+}
 
   return (
     <section className="grid md:grid-cols-2 my-12 md:my-16 py-24 gap-4 relative">

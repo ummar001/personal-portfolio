@@ -12,7 +12,7 @@ const WhatIDo = () => {
         <div className="flex justify-around max-w-3xl mx-auto">
           <div className="flex flex-col items-center mx-3">
             <svg
-              role="img"
+              role="image"
               viewBox="0 0 24 24"
               xmlns="http://www.w3.org/2000/svg"
               style={{ width: "100px", height: "100px", fill: "#00FFFF" }}
@@ -24,7 +24,7 @@ const WhatIDo = () => {
           </div>
           <div className="flex flex-col items-center mx-3">
             <svg
-              role="img"
+              role="image"
               viewBox="0 0 24 24"
               xmlns="http://www.w3.org/2000/svg"
               style={{ width: "100px", height: "100px", fill: "#00FFFF" }}
@@ -36,7 +36,7 @@ const WhatIDo = () => {
           </div>
           <div className="flex flex-col items-center mx-3">
             <svg
-              role="img"
+              role="image"
               viewBox="0 0 24 24"
               xmlns="http://www.w3.org/2000/svg"
               style={{ width: "100px", height: "100px", fill: "#00FFFF" }}
@@ -54,7 +54,7 @@ const WhatIDo = () => {
               <h2 className="text-3xl font-bold text-center text-[#00FFFF] mb-5 text-lg:mb-1">⚡ Stats & Skills ⚡
         
       <br />
-      <p align="center">
+      <div align="center" className="flex flex-col sm:flex-row justify-center">
         <div align="center" className="flex flex-col sm:flex-row justify-center">
           {/* GitHub Stats */}
           <div className="mb-4 sm:mr-8 lg:mr-20">
@@ -77,7 +77,8 @@ const WhatIDo = () => {
             <img height="200" align="center" src="https://github-readme-stats.vercel.app/api/top-langs/?username=ummar001&size_weight=0.5&count_weight=0.5&theme=react&border=61dafb&hide_border=true" alt="Top Languages mt-20" />
           </a>
         </div>
-      </p>
+        </div>
+        
 
       {/* Include the Skills Section here */}
       

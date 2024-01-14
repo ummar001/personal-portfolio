@@ -1,4 +1,8 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {}
+// next.config.js
 
-module.exports = nextConfig
+module.exports = {
+    images: {
+      domains: ['github-readme-stats.vercel.app', 'streak-stats.demolab.com'],
+    },
+  };
+  
