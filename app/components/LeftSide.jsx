@@ -1,7 +1,6 @@
 import { TbBrandGithub } from "react-icons/tb";
 import {
   SlSocialLinkedin,
-  SlSocialTwitter,
   SlSocialGoogle,
 } from "react-icons/sl";
 import { TbBrandDiscordFilled } from "react-icons/tb";
