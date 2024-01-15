@@ -6,10 +6,12 @@ module.exports = {
     },
     
     // Add the export configuration
-    output: {
-      // This will create a static export in the 'out' directory.
-      // Adjust the path as needed.
-      path: '/out',
-    },
+    // output: {
+    //  // Adjust the path as needed.
+    //   path: '/out',
+    // },   // This will create a static export in the 'out' directory.
+    
   };
+    
+
   

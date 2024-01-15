@@ -14,6 +14,7 @@ import dynamic from 'next/dynamic';
 import MouseParticles from "./components/InteractiveMouseTrail/MouseParticles";
 import BlueDot from "./components/bluedotcomponent/BlueDot";
 
+
 import "./page.css"; // Import your CSS file
 
 
@@ -22,6 +23,7 @@ export default function Home() {
   return (
 
    <div>
+     
 
      <BlueDot size="30px" />
     <ParallaxProvider>
