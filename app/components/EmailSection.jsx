@@ -1,7 +1,8 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 
 const EmailSection = () => {
   const splineViewerRef = useRef();
+  const [isLargeScreen, setIsLargeScreen] = useState(false);
 
   useEffect(() => {
     const script = document.createElement("script");
@@ -18,18 +19,23 @@ const EmailSection = () => {
       }
     };
 
+    // Function to update the isLargeScreen state based on window width
+    const updateScreenSize = () => {
+      setIsLargeScreen(window.innerWidth >= 640);
+    };
+
+    // Attach the event listener for window resize
+    window.addEventListener("resize", updateScreenSize);
+
+    // Initial call to set the isLargeScreen state
+    updateScreenSize();
+
     return () => {
+      // Remove the event listener on component unmount
+      window.removeEventListener("resize", updateScreenSize);
       document.head.removeChild(script);
     };
   }, []);
-
-  // Check if the window width is greater than or equal to 640 (sm breakpoint)
-  let isLargeScreen;
-
-if (typeof window !== 'undefined') {
-  // Check if the window width is greater than or equal to 640 (sm breakpoint)
-  isLargeScreen = window.innerWidth >= 640;
-}
 
   return (
     <section className="grid md:grid-cols-2 my-12 md:my-16 py-24 gap-4 relative">
@@ -51,7 +57,6 @@ if (typeof window !== 'undefined') {
             ></spline-viewer>
           </div>
         )}
-      
       </div>
       <div>
         <form>
