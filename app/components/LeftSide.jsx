@@ -16,12 +16,12 @@ const LeftSide = () => {
       <div className="flex flex-col gap-4">
         <a href="https://github.com/ummar001" target="_blank">
           <span className="w-10 h-10 text-xl bg-hoverColor rounded-full inline-flex items-center justify-center hover:text-textGreen cursor-pointer hover:-translate-y-2 transition-all duration-300">
-            <TbBrandGithub />
+            <TbBrandGithub color="white" />
           </span>
         </a>
         <a href="https://www.linkedin.com/in/ummarmohammed/" target="_blank">
           <span className="w-10 h-10 text-xl bg-hoverColor rounded-full inline-flex items-center justify-center hover:text-textGreen cursor-pointer hover:-translate-y-2 transition-all duration-300">
-            <SlSocialLinkedin />
+            <SlSocialLinkedin color="white" />
           </span>
         </a>
         <a
@@ -30,19 +30,19 @@ const LeftSide = () => {
         >
           {/* Replace Facebook with Twitter */}
           <span className="w-10 h-10 text-xl bg-hoverColor rounded-full inline-flex items-center justify-center hover:text-textGreen cursor-pointer hover:-translate-y-2 transition-all duration-300">
-           <RiTwitterXFill />
+           <RiTwitterXFill color="white" />
           </span>
         </a>
         <a href="mailto:m.ummar.uk@gmail.com" target="_blank">
           {/* Replace Instagram with Gmail */}
           <span className="w-10 h-10 text-xl bg-hoverColor rounded-full inline-flex items-center justify-center hover:text-textGreen cursor-pointer hover:-translate-y-2 transition-all duration-300">
-            <SlSocialGoogle />
+            <SlSocialGoogle color="white" />
           </span>
         </a>
 
         <a href="https://discord.com/users/_ummar" target="_blank">
           <span className="w-10 h-10 text-xl bg-hoverColor rounded-full inline-flex items-center justify-center hover:text-textGreen cursor-pointer hover:-translate-y-2 transition-all duration-300">
-            <TbBrandDiscordFilled />
+            <TbBrandDiscordFilled color="white"/>
           </span>
         </a>
       </div>

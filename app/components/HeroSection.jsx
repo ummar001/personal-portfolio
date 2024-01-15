@@ -39,50 +39,46 @@ const HeroSection = () => {
           />
           <br />
 
-          <p className="text-[#00FFFF] text-lg mb-1 lg:text-xl">
-            Junior Software Engineer
-          </p>
-          <p className="text-[#00FFFF] text-lg mb-10 lg:text-xl">
-            From Manchester
-          </p>
-          <div>
-            {/* Use Link from react-scroll for smooth scrolling */}
-            <Link
-              to="email" // Replace "email" with the ID of your "Contact Me" section
-              smooth={true}
-              duration={500}
-              className="px-6 py3 rounded-full mr-4 hover:bg-slate-200 text-[#00FFFF] border border-[#00FFFF]"
-            >
-              Contact Me
-            </Link>
-            {/* Use Link for the "View Portfolio" button as well */}
-            <Link
-              to="projects" // Replace "portfolio" with the ID of your "View Portfolio" section
-              smooth={true}
-              duration={500}
-              className="px-6 py3 rounded-full mr-4 hover:bg-slate-200 text-[#00FFFF] border border-[#00FFFF] mt-4 mb-5"
-            >
-              View Portfolio
-            </Link>
-          </div>
+          
+            <p className="text-[#00FFFF]  text-lg mb-1 lg:text-xl">
+              Junior Software Engineer
+            </p>
+            <p className="text-[#00FFFF] text-lg mb-10 lg:text-xl">
+              From Manchester
+            </p>
+            <div>
+              {/* Use Link from react-scroll for smooth scrolling */}
+              <Link
+                to="email" // Replace "email" with the ID of your "Contact Me" section
+                smooth={true}
+                duration={500}
+                className="px-6 py3 rounded-full mr-4 hover:bg-slate-200 text-[#00FFFF] border border-[#00FFFF]"
+              >
+                Contact Me
+              </Link>
+              {/* Use Link for the "View Portfolio" button as well */}
+              <Link
+                to="projects" // Replace "portfolio" with the ID of your "View Portfolio" section
+                smooth={true}
+                duration={500}
+                className="px-6 py3 rounded-full mr-4 hover:bg-slate-200 text-[#00FFFF] border border-[#00FFFF] mt-4 mb-5"
+              >
+                View Portfolio
+              </Link>
+            </div>
+          
         </div>
         {/* //been circled blue gradient effect */}
 
         <div className="#">
-          {/* <div className="rounded-full bg-white w-[250px] h-[250px] lg:w-[400px] lg:h-[400px] relative overflow-hidden">
-                <Image
-                  src="/images/hero.png"
-                  alt="hero image"
-                  className="object-cover object-center w-full h-full"
-                  layout="fill"
-                />
-              </div> */}
+        
 
           <div className="spline-container">
             {/* Include the Spline component directly */}
             <Spline
               scene="https://prod.spline.design/k1yeluFnG47cHIid/scene.splinecode"
               style={{ width: "70vh", height: "80vh" }}
+              loading="lazy"
             />
           </div>
         </div>
