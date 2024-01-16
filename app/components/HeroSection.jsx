@@ -11,14 +11,14 @@ const HeroSection = () => {
       <div className="grid grid-cols-7 lg:grid-cols-12">
         <div className="absolute w-80 h-80 z-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-[#00FFFF] to-transparent rounded-full blur-lg top-full -left-4 transform -translate-x-1/2 -translate-y-1/2"></div>
         <div
-          className="col-span-7 place-self-center text-left sm:text-left sm:mt-50 sm:pt-200"
-          style={{ left: "10%", paddingRight: "30%" }}
+          className="col-span-7 place-self-center text-left sm:text-left sm:align-middle "
+          style={{ left: "10%", paddingRight: "45%" }}
         >
           <div className="absolute mt-20 ">
             <TypeAnimationComponent className="absolute top-0 left-1/2 transform -translate-x-1/2" />
           </div>
         </div>
-        <div className=" col-span-7 place-self-center lg:mr-24 text-center sm:text-left sm:pl-24" style={{ marginTop: '300px', textAlign: 'left' }}>
+        <div className=" col-span-7 place-self-center lg:mr-24 text-center sm:text-left sm:pl-24 sx:pl-24" style={{ marginTop: '300px', textAlign: 'center' }}>
           <div>
             <p className="text-[#00FFFF] text-lg mb-0 lg:text-xl">
               Junior Software Engineer
