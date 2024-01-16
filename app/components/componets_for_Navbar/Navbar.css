@@ -1,6 +1,7 @@
 /* Navbar.css */
 
 @import url("https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
 
 * {
   padding: 0;
@@ -111,11 +112,13 @@ nav {
   }
 }
 
-header h3 {
+h3 {
   font-size: 2rem;
-  font-weight: extra bold;
+  font-family: 'Roboto', sans-serif; /* Use the imported font or choose another neon-like font */
+  font-weight: bold;
   margin-right: auto; /* Align the heading to the left */
-  color: black;
+  color: #00FFFF; /* Use the correct syntax for specifying the color */
+  text-shadow: 0 0 10px #00FFFF, 0 0 20px #00FFFF, 0 0 30px #00FFFF; /* Adjust the shadow values for the desired glow effect */
   z-index: 1;
 }
 
@@ -123,6 +126,7 @@ header h3 {
   header h3 {
     font-size: 1.5rem; /* Adjust the font size as needed for small screens */
     font-weight: normal; /* Adjust the font weight as needed for small screens */
-    margin-right: 1rem; /* Adjust margin if needed for small screens */
+    margin-right: 1rem; 
+    color: 00FFFF;/* Adjust margin if needed for small screens */
   }
 }

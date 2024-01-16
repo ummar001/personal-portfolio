@@ -41,7 +41,7 @@ const HeroSection = () => {
                 to="projects"
                 smooth={true}
                 duration={500}
-                className="px-6 py3 rounded-full mr-4 hover:bg-slate-200 text-[#00FFFF] border border-[#00FFFF] mt-4 mb-2"
+                className="px-6 py3 rounded-full mr-4 hover:bg-slate-200 text-[#00FFFF] border border-[#00FFFF] mt-4 mb-0"
               >
                 View Portfolio
               </Link>
