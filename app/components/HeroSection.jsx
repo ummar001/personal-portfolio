@@ -58,7 +58,7 @@ const HeroSection = () => {
           <div className="spline-container">
             {/* Include the Spline component directly */}
             <Spline
-              scene="https://prod.spline.design/k1yeluFnG47cHIid/scene.splinecode"
+              scene="https://prod.spline.design/6KGppHgavV5FeTgw/scene.splinecode"
               style={{ width: "70vh", height: "80vh" }}
               async
             />

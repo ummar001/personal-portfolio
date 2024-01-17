@@ -24,7 +24,7 @@
 
 /* Additional styles for mobile devices */
 @media (max-width: 768px) {
-  .full-screen-section {
+  .full-screen-section {  
     margin-top: 20px;
     margin-bottom: 20px;
     height: auto;
