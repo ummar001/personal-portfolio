@@ -30,7 +30,7 @@ const AboutSection = () => {
           <p>
             As a team player, I look forward to collaborating with others to
             develop exceptional applications. Let&apos;s embark on this tech
-            journey together!
+            journey together!!
           </p>
         </div>
 
