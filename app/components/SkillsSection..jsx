@@ -6,7 +6,7 @@ const SkillsSection = () => {
 <div className="skills-container">
         <h3 align="center">Languages and Tools:</h3>
         <div className="flex justify-center items-center">
-          {/* Add your skill icons and links here */}
+          {/* Add your skill icons and links here i will add to this soon */}
         </div>
         {/* Add more skill sections if needed */}
       </div>
